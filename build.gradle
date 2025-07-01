@@ -36,8 +36,17 @@ dependencies {
     implementation 'org.bstats:bstats-bukkit:3.0.2'
 }
 
+jar {
+    archiveClassifier = 'noshadow'
+}
+
 shadowJar {
     relocate 'org.bstats', 'com.mcdragonmasters.PotatoSK.bstats'
+    archiveClassifier = ''
+}
+
+build {
+    dependsOn shadowJar
 }
 
 java {
