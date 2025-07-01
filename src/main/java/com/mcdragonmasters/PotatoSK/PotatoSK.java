@@ -25,7 +25,7 @@ public class PotatoSK extends JavaPlugin {
     public static MVWorldManager MVWorldManager;
     private static Metrics metrics;
     private static final String prefix = net.md_5.bungee.api.ChatColor.of("#40ff00")
-            + "[PotatoSK] " + ChatColor.RESET;
+            + "[NuPotatoSK] " + ChatColor.RESET;
     SkriptAddon addon;
 
     public void onEnable() {
@@ -43,7 +43,7 @@ public class PotatoSK extends JavaPlugin {
             throw new RuntimeException(e);
         }
         metrics.addCustomChart(new SimplePie("skript_version", () -> Skript.getVersion().toString()));
-        Logger.success("PotatoSK has been enabled!");
+        Logger.success("NuPotatoSK has been enabled!");
 
         //PluginManager pm = getServer().getPluginManager();
         //pm.registerEvents(new JoinLeave(), this);

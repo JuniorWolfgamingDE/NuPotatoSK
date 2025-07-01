@@ -1,7 +1,7 @@
-name: PotatoSK
-description: PotatoSK fr
-authors: [ MCdragonmasters ]
-website: https://github.com/MCdragonmasters/PotatoSK
+name: NuPotatoSK
+description: An updated PotatoSK f(o)r(k)
+authors: [ MCdragonmasters, JuniorWMG ]
+website: https://github.com/JuniorWolfgamingDE/NuPotatoSK
 version: @version@
 main: com.mcdragonmasters.PotatoSK.PotatoSK
 api-version: '1.20'
