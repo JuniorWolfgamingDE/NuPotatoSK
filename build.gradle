@@ -2,6 +2,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
     id "java"
+    id "com.gradleup.shadow" version "9.0.0-beta17"
 }
 
 group = "com.mcdragonmasters"
@@ -31,6 +32,12 @@ dependencies {
     }
     // Multiverse-Core
     compileOnly 'com.onarandombox.multiversecore:multiverse-core:4.3.14'
+    // bStats
+    implementation 'org.bstats:bstats-bukkit:3.0.2'
+}
+
+shadowJar {
+    relocate 'org.bstats', 'com.mcdragonmasters.PotatoSK.bstats'
 }
 
 java {

@@ -2,8 +2,8 @@ package com.mcdragonmasters.PotatoSK;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;
-import ch.njol.skript.bstats.bukkit.Metrics;
-import ch.njol.skript.bstats.charts.SimplePie;
+import org.bstats.bukkit.Metrics;
+import org.bstats.charts.SimplePie;
 import com.mcdragonmasters.PotatoSK.utils.PotatoUtils;
 import com.onarandombox.MultiverseCore.MultiverseCore;
 import com.onarandombox.MultiverseCore.api.MVWorldManager;
@@ -31,7 +31,7 @@ public class PotatoSK extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
         config = getConfig();
-        Metrics metrics = new Metrics(this, 22275);
+        metrics = new Metrics(this, 26331);
         instance = this;
 
         try {
