@@ -37,7 +37,7 @@ public class PotatoSK extends JavaPlugin {
         try {
             addon = Skript.registerAddon(this);
             addon.loadClasses("com.mcdragonmasters.PotatoSK.skript");
-            //registerHook("WorldEdit", "WorldEdit");
+            // registerHook("WorldEdit", "WorldEdit");
             registerHook("Multiverse-Core", "MultiverseCore");
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -45,8 +45,8 @@ public class PotatoSK extends JavaPlugin {
         metrics.addCustomChart(new SimplePie("skript_version", () -> Skript.getVersion().toString()));
         Logger.success("NuPotatoSK has been enabled!");
 
-        //PluginManager pm = getServer().getPluginManager();
-        //pm.registerEvents(new JoinLeave(), this);
+        // PluginManager pm = getServer().getPluginManager();
+        // pm.registerEvents(new JoinLeave(), this);
     }
     public void registerHook(@NotNull String name, @NotNull String plugin) throws IOException {
         if (Bukkit.getServer().getPluginManager().isPluginEnabled(name) && config.getBoolean(plugin.toLowerCase()+"-hook", true)) {

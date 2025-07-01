@@ -10,27 +10,26 @@ version = "1.0.2"
 repositories {
     mavenCentral()
     mavenLocal()
-    //WorldEdit
+    // WorldEdit
     maven {url = "https://maven.enginehub.org/repo/"}
-    //Paper
+    // Paper
     maven {url = "https://repo.papermc.io/repository/maven-public/"}
-    //Skript
+    // Skript
     maven {url = "https://repo.skriptlang.org/releases"}
-    //Multiverse-Core
+    // Multiverse-Core
     maven {url = "https://repo.onarandombox.com/content/groups/public/"}
 
     maven {url = "https://jitpack.io"}
 }
 
 dependencies {
-    //Paper
+    // Paper
     compileOnly "io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT"
-
-    //Skript
+    // Skript
     compileOnly ("com.github.SkriptLang:Skript:2.10.0") {
         transitive = false
     }
-    //Multiverse-Core
+    // Multiverse-Core
     compileOnly 'com.onarandombox.multiversecore:multiverse-core:4.3.14'
 }
 
